@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="inscription3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li id="notrelogo"><a href="#"><div class="link">C O U R S E S</div></a></li>
+            <li id="contacter"><a href="Contacter.html"><div class="link">Nous contacter</div></a></li>
+            <li id="Nosprofs"><a href="Accueil.html"><div class="link">Accueil</div></a></li>
+        </ul>
+    </nav>
+    <!-- <div id="imagePrincipale">
+        <h1>C O U R S E S</h1>
+        <div id="premierTrait"></div>
+        <h3>Des cours particuliers adaptés pour une réussite assurée</h3>
+    </div> -->
+<section>
+  <div class="container">
+    <div class="title">Vous voulez rejoindre notre équipe d'enseignants, remplissez le formulaire suivant, sinon appuyez sur <a href="Accueil.html">annuler</a></div>
+    <div class="content">
+      <form name="verifications" action="#" id="Rejoindre" onsubmit="return false">
+        <div class="user-details">
+          <div class="input-box">
+            <label class="details">Nom(s) et prénom(s)</label>
+            <input type="text" name="nometPrenom" placeholder="Entrer vos noms et prénoms svp" required>
+            <p class="text-error"> Le nom et prenom doivent à avoir plus de six caractères</p>
+          </div>
+          <div class="input-box">
+            <label class="details">Email</label>
+            <input type="email" name="mail" placeholder="Entrer votre adresse e-mail" required>
+            <p class="text-error"> Le format de l'email est incorrect</p>
+          </div>
+          <div class= "input-box">
+            <label class="details">Votre date de naissance </label>
+            <input id="date" type="date" name="dateNaissance" value="2001-06-06">
+            <!-- <p class="text-error"> Date de naissance bizarre</p> -->
+          </div>
+          <div class="input-box">
+            <label class="details">Profession </label>
+            <input type ="text" name="profession" placeholder="Votre profession svp" size ="30" required>
+            <p class="text-error"> Profession non-valide</p>
+          </div>
+          <div class="input-box">
+            <label class="details">Téléphone</label>
+            <input type="text" name="telephone" placeholder="Entrer votre numéro de téléphone" required>
+            <p class="text-error"> Numéro de téléphone non-valide</p>
+          </div>
+          <div class="input-box">
+            <label class="details"> <br/>Donner un bref descriptif de vous en précisant les matières que vous souhaitez enseigner </label>
+            <textarea placeholder="Votre message ici..." class="textarea"></textarea>
+            <p class="text-error"> écrivez quelque chose</p>
+          </div>
+        </div>
+        
+        <div class="cv">Veuillez joindre votre CV svp <input type="file" id="docpicker"
+            accept=".pdf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" placeholder="Votre cv">
+        </div>
+        <div class="button">
+          <input type="submit" class="btn" onclick="ajouter()" value=" Valider ">
+          <!-- <input type="submit"  value="Valider">  -->
+        </div>
+        <p class="text-success"> Nous avons reçu vos informations avec succès </p>
+      </form>
+    </div>
+  </div>
+</section>
+</header>
+<section>
+<main id="tableauInfo">
+  <div class="container">
+    <div class="title">Veuillez vérifier les informations que vous avez entrées</div>
+    <div class="content">
+        <form action="Accueil.html" id="Rejoindre">
+            <table class="verif">
+                <thead>
+                    <tr>
+                    <th> Nom et Prénom </th>
+                    <th> Date de naissance </th>
+                    <th> Profession </th>
+                    <th> Telephone </th>
+                    <th> Adresse e-mail </th>
+                   </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+             <div class="button">
+                <input type="submit" value="Correct">
+            </div>
+        </form>
+            <div class="modification">Cliquer sur <a href="#">MODIFIER</a> si vous voulez les modifier.</div>
+    </div>
+    </div>
+
+</main>
+</section>
+  <footer>
+    <span class="questionPreoc">Des préoccupations ? <a href="Contacter.html" > <span class="link"><u>CONTACTEZ-NOUS!</u></span></a></span>
+    <div><a href="aPropos.html"><br/> <div class="link">
+        <u>A propos de COURSES</u></div></a></div>
+    <div id="deuxiemeTrait"></div>
+    <span id="icons">
+        <!--<div id="copyright">**/--> 
+            © Etudiant Efrei L3new; P2024 
+        <!--</div>-->
+        <a href="http://www.twitter.fr"><i class="fa fa-twitter"></i></a>  
+        <a href="http://www.facebook.fr"><i class="fa fa-facebook"></i></a>
+        <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a> 
+        </span>
+</footer>
+
+<script type="text/javascript" src="inscription.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+           
+                    
+                    
+            
+       
